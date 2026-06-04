@@ -1,0 +1,45 @@
+# ═══════════════════════════════════════
+# StoreIQ .gitignore
+# ═══════════════════════════════════════
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv
+venv
+env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+.env
+
+# Data files (DO NOT commit videos or large data)
+*.mp4
+*.avi
+*.mov
+*.mkv
+data/output/
+*.db
+*.db-shm
+*.db-wal
+
+# YOLO models (downloaded automatically)
+*.pt
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,10 @@
+{
+    "_comment": "CAM 2 — Makeup section.",
+    "zones": [
+        {
+            "name": "makeup",
+            "polygon": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+            "type": "makeup"
+        }
+    ]
+}

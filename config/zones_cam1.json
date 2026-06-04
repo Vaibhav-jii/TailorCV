@@ -1,0 +1,10 @@
+{
+    "_comment": "CAM 1 — Skincare section.",
+    "zones": [
+        {
+            "name": "skincare",
+            "polygon": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+            "type": "skincare"
+        }
+    ]
+}

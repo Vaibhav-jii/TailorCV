@@ -1,0 +1,10 @@
+{
+    "_comment": "CAM 3 — Entrance. Zone constrained to the INSIDE (wooden floor) to ignore people walking outside on the street.",
+    "zones": [
+        {
+            "name": "entrance",
+            "polygon": [[0, 0], [1150, 0], [800, 1080], [0, 1080]],
+            "type": "entrance"
+        }
+    ]
+}

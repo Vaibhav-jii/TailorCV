@@ -1,0 +1,129 @@
+{
+  "stores": {
+    "STORE_001": {
+      "store_code": "store_1076",
+      "store_name": "Purplle Store - Mumbai 1076",
+      "city": "Mumbai",
+      "open_hours": {"open": "10:00", "close": "22:00"},
+      "cameras": {
+        "CAM_01": {
+          "camera_type": "zone",
+          "description": "CAM 1 - Zone camera (Left side shelves)",
+          "video_file": "CAM 1 - zone.mp4",
+          "zones": [
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z01",
+              "name": "Left Shelf",
+              "type": "SHELF",
+              "is_revenue_zone": "Yes",
+              "polygon": [[0, 100], [700, 100], [700, 600], [0, 600]]
+            },
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z02",
+              "name": "Center Display",
+              "type": "DISPLAY",
+              "is_revenue_zone": "Yes",
+              "polygon": [[400, 300], [1000, 300], [1000, 700], [400, 700]]
+            },
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z_FRAG",
+              "name": "Fragrance & Nail Unit",
+              "type": "SHELF",
+              "is_revenue_zone": "Yes",
+              "polygon": [[0, 600], [500, 600], [500, 900], [0, 900]]
+            }
+          ]
+        },
+        "CAM_02": {
+          "camera_type": "zone",
+          "description": "CAM 2 - Zone camera (Main floor / Makeup area)",
+          "video_file": "CAM 2 - zone.mp4",
+          "zones": [
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z03",
+              "name": "Makeup Unit",
+              "type": "DISPLAY",
+              "is_revenue_zone": "Yes",
+              "polygon": [[600, 200], [1200, 200], [1200, 650], [600, 650]]
+            },
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z04",
+              "name": "Right Shelf",
+              "type": "SHELF",
+              "is_revenue_zone": "Yes",
+              "polygon": [[1200, 100], [1920, 100], [1920, 700], [1200, 700]]
+            },
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z05",
+              "name": "Browsing Floor",
+              "type": "FLOOR",
+              "is_revenue_zone": "No",
+              "polygon": [[0, 650], [1200, 650], [1200, 1080], [0, 1080]]
+            }
+          ]
+        },
+        "CAM_03": {
+          "camera_type": "entry",
+          "description": "CAM 3 - Entry/Exit camera",
+          "video_file": "CAM 3 - entry.mp4",
+          "zones": [
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z_ENTRY",
+              "name": "Entrance",
+              "type": "ENTRANCE",
+              "is_revenue_zone": "No",
+              "polygon": [[0, 400], [800, 400], [800, 1080], [0, 1080]]
+            }
+          ],
+          "entry_line": {
+            "start": [400, 500],
+            "end": [400, 900],
+            "direction": "horizontal"
+          }
+        },
+        "CAM_05": {
+          "camera_type": "billing",
+          "description": "CAM 5 - Billing area camera",
+          "video_file": "CAM 5 - billing.mp4",
+          "zones": [
+            {
+              "zone_id": "PURPLLE_MUM_1076_Z_BILLING_01",
+              "name": "Billing Counter Queue",
+              "type": "BILLING",
+              "is_revenue_zone": "Yes",
+              "polygon": [[200, 100], [1700, 100], [1700, 900], [200, 900]]
+            }
+          ]
+        }
+      }
+    },
+    "STORE_002": {
+      "store_code": "store_2",
+      "store_name": "Purplle Store 2",
+      "city": "Mumbai",
+      "open_hours": {"open": "10:00", "close": "22:00"},
+      "cameras": {
+        "CAM_ENTRY_1": {
+          "camera_type": "entry",
+          "description": "Entry camera 1",
+          "video_file": "entry 1.mp4"
+        },
+        "CAM_ENTRY_2": {
+          "camera_type": "entry",
+          "description": "Entry camera 2",
+          "video_file": "entry 2.mp4"
+        },
+        "CAM_ZONE": {
+          "camera_type": "zone",
+          "description": "Zone camera",
+          "video_file": "zone.mp4"
+        },
+        "CAM_BILLING": {
+          "camera_type": "billing",
+          "description": "Billing area camera",
+          "video_file": "billing_area.mp4"
+        }
+      }
+    }
+  }
+}

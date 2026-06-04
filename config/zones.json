@@ -1,0 +1,30 @@
+{
+    "_comment": "General-purpose zone config for Purplle store (1920x1080). Works best with CAM 1 and CAM 2. Use camera-specific configs (zones_cam1.json etc.) for best accuracy.",
+    "zones": [
+        {
+            "name": "entrance",
+            "polygon": [[0, 700], [400, 700], [400, 1080], [0, 1080]],
+            "type": "entrance"
+        },
+        {
+            "name": "skincare",
+            "polygon": [[0, 100], [700, 100], [700, 600], [0, 600]],
+            "type": "skincare"
+        },
+        {
+            "name": "makeup",
+            "polygon": [[700, 100], [1400, 100], [1400, 600], [700, 600]],
+            "type": "makeup"
+        },
+        {
+            "name": "billing",
+            "polygon": [[1400, 200], [1920, 200], [1920, 700], [1400, 700]],
+            "type": "billing"
+        },
+        {
+            "name": "browsing_floor",
+            "polygon": [[400, 600], [1400, 600], [1400, 1080], [400, 1080]],
+            "type": "general"
+        }
+    ]
+}

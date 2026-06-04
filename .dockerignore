@@ -1,0 +1,35 @@
+# Video data (864 MB — mounted at runtime via docker-compose volumes)
+data/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Database (created at runtime)
+*.db
+*.db-shm
+*.db-wal
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# YOLO model weights (downloaded at runtime if needed)
+yolov8m.pt
+
+# Misc
+*.jpg
+*.png
+docs/

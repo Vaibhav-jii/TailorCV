@@ -1,44 +1,44 @@
-# ═══════════════════════════════════════════════════
-# Store Intelligence - AI-Powered Store Analytics
-# ═══════════════════════════════════════════════════
+Resume Optimizer
+AI-powered resume optimization: ATS score analysis and job-description–tailored resume generation.
 
-# CPU-only PyTorch (MUST come before ultralytics to prevent CUDA install)
---extra-index-url https://download.pytorch.org/whl/cpu
-torch
-torchvision
+Run on localhost
+Install dependencies
 
-# Computer Vision
-ultralytics>=8.2.0
-supervision>=0.22.0
-opencv-python-headless>=4.9.0
+pip install -r requirements.txt
+Set your OpenAI API key
+Create a .env file in the project root:
 
-# Data & Processing
-numpy>=1.26.0
-scipy>=1.12.0
-pandas>=2.2.0
+OPENAI_API_KEY=your_openai_api_key_here
+Start the app
 
-# API
-fastapi>=0.110.0
-uvicorn[standard]>=0.29.0
-websockets>=12.0
-python-multipart>=0.0.9
+python main.py
+This now starts in single-process mode by default for a more reliable Windows setup. If you want auto-reload during development, use:
 
-# Data Models & Config
-pydantic>=2.6.0
-pydantic-settings>=2.2.0
-python-dotenv>=1.0.0
+set ENABLE_RELOAD=true
+python main.py
+Open in browser
 
-# Dashboard
-streamlit>=1.32.0
-plotly>=5.19.0
+Landing page: http://localhost:8000
+Solutions (upload resume + JD): http://localhost:8000/solutions
+Health check: http://localhost:8000/health
+Recommended on this Windows setup
+Use the included launcher instead of starting Python manually:
 
-# CLI
-rich>=13.7.0
-typer>=0.9.0
+PowerShell: .\run_local.ps1
+Command Prompt / double-click: run_local.bat
+These launchers:
 
-# Geometry
-shapely>=2.0.0
-
-# Testing
-pytest>=8.0.0
-httpx>=0.27.0
+use the project virtual environment
+clear broken proxy variables that can block OpenAI requests
+start the app with stable local settings
+Optional: run with uvicorn (auto-reload on code changes)
+uvicorn main:app --reload --host 127.0.0.1 --port 8000
+Features
+Landing page – Marketing-style homepage
+Solutions page – Upload PDF resume and paste job description
+Get ATS Score – Strengths, weaknesses, keywords, recruiter tips
+Optimize Resume – Download a tailored PDF resume
+Requirements
+Python 3.10+
+OpenAI API key
+PDF resume for upload
